@@ -1,0 +1,24 @@
+{
+    "ts-node": {
+      "require": ["tsconfig-paths/register"],
+      "esm": true,
+      "experimentalSpecifiers": true
+    },
+    "compilerOptions": {
+      "outDir": "./dist",
+      "strict": true,
+      "resolveJsonModule": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "baseUrl": "./",
+      "paths": {
+        "*": ["./src/*"]
+      },
+      "esModuleInterop": true,
+      "module": "ESNext",
+      "moduleResolution": "node",
+      "target": "ESNext"
+    },
+    "include": ["src/**/*.ts", "src/**/*.js"],
+    "exclude": ["node_modules"]
+  }
