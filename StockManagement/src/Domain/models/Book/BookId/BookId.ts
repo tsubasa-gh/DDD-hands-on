@@ -31,10 +31,6 @@ export class BookId extends ValueObject<string, 'BookId'> {
         return isbn13.startsWith('978') && isbn13.length === 13;
     }
 
-    getValue(): string {
-        return this._value;
-    }
-
     toISBN(): string {
         // ISBNが10桁の場合の、'ISBN' フォーマットに変換します。
         if (this._value.length ===10) {

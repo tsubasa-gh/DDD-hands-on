@@ -11,7 +11,7 @@ export abstract class ValueObject<T, U> {
 
     protected abstract validate(value: T): void;
     
-    get value(): T {
+    getValue(): T {
         return this._value;
     }
 
