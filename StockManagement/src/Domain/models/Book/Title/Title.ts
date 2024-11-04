@@ -1,4 +1,4 @@
-import { ValueObject } from "../shared/ValueObject";
+import { ValueObject } from "../../shared/ValueObject";
 
 type TitleValue = string;
 export class Title extends ValueObject<TitleValue, 'Title'> {
