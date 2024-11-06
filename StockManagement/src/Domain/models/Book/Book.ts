@@ -50,9 +50,9 @@ export class Book {
         this._stock.decreaseQuantity(amount);
     }
 
-    inDuplicateISBN(isbn: BookId) {
-        // 既に登録されているISBNかどうかを確認する処理
-    }
+    // inDuplicateISBN(isbn: BookId) {
+    //     // 既に登録されているISBNかどうかを確認する処理
+    // }
 
     get bookId(): BookId {
         return this._bookId;

@@ -16,7 +16,7 @@ model Book {
 
 model Stock {
   stockId           String @id
-  quqntityAvailable Int
+  quantityAvailable Int
   status            Status @default(OUT_OF_STOCK)
   book              Book   @relation(fields: [bookId], references: [bookId], onDelete: Cascade)
   bookId            String @unique
